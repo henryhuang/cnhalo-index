@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CNHALO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css">
+</head>
+
+<body>
+    <%- body %>
+        <!--SCRIPTS-->
+        <script src="/min/production.min.js"></script>
+        <!--SCRIPTS END-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $('#onepage').fullpage({
+                navigation: true,
+                
+                paddingTop: '200px',
+                paddingBottom: '200px',
+                anchors: ['1', '2'],
+                menu: '#menu',
+            });
+        });
+        </script>
+</body>
+
+</html>

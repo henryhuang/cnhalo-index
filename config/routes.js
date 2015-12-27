@@ -41,7 +41,7 @@ module.exports.routes = {
     '/tools': {
         view: 'tools',
         locals: {
-            layout: 'layouts/singlepage'
+            layout: 'layouts/page'
         }
     }
 

@@ -1,0 +1,28 @@
+
+<% block('csses', '<link href="/bower_components/jsoneditor/dist/jsoneditor.min.css" rel="stylesheet"></link>') -%>
+
+<div class="container">
+	
+	<div class="row">
+		<div class="col-lg-6">
+			<div id="jsoneditor" style="width: 400px; height: 400px;"></div>
+		</div>
+		<div class="col-lg-6">
+			
+			<ul>
+				<li>选择“Text”</li>
+				<li>输入为格式化的json</li>
+				<li>选择“Tree”</li>
+			</ul>
+
+		</div>
+	</div>
+
+	
+
+</div>
+
+<% block('scripts', '<script src="/bower_components/jsoneditor/dist/jsoneditor.min.js"></script>') -%>
+
+<% block('scripts', '<script type="text/javascript">var container = document.getElementById("jsoneditor");var editor = new JSONEditor(container, {mode: "tree", modes: [\'code\', \'form\', \'text\', \'tree\', \'view\']});editor.set({})</script>') -%>
+

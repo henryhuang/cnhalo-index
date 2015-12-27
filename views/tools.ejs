@@ -1,3 +1,14 @@
 <div class="row text-center">
     <h3>这是工具页面。</h3>
+    <div class="container">
+        <div class="row text-center">
+            <ul class="nav nav-pills" role="tablist">
+                <% tools.forEach(function(tool){ %>
+                <li role="presentation">
+                    <a href="/tools/<%= tool.url %>"><%= tool.caption %></a>
+                </li>
+                <% })%>
+            </ul>
+        </div>
+    </div>
 </div>

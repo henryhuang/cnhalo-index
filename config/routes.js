@@ -41,7 +41,29 @@ module.exports.routes = {
     '/tools': {
         view: 'tools',
         locals: {
-            layout: 'layouts/page'
+            layout: 'layouts/page',
+            title: '工具',
+            tools: [{
+                url: 'json-formatter',
+                caption: 'JSON格式化工具'
+            },{
+                url: 'css-formatter',
+                caption: 'CSS格式化工具'
+            }]
+        }
+    },
+    '/tools/json-formatter': {
+        view: 'tools/json-formatter',
+        locals: {
+            layout: 'layouts/page',
+            title: 'JSON格式化工具'
+        }
+    },
+    '/tools/css-formatter': {
+        view: 'tools/css-formatter',
+        locals: {
+            layout: 'layouts/page',
+            title: 'CSS格式化工具'
         }
     }
 

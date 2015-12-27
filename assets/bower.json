@@ -19,6 +19,7 @@
   "dependencies": {
     "font-awesome": "fontawesome#~4.5.0",
     "bootstrap": "~3.3.5",
-    "fullpage.js": "fullpage#2.7.4"
+    "fullpage.js": "fullpage#2.7.4",
+    "jsoneditor": "~4.2.1"
   }
 }
